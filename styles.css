@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FDE1D6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+header {
+    background-color: #FDE1D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 154px;
+    padding: 10px 0;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 317px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.nav-izquierda {
+    display: flex;
+}
+
+.corazon-nav {
+    width: 16px;
+    height: auto;
+}
+
+.logo-nav {
+    width: 183px;
+    height: auto;
+}
+
+nav li {
+    font-weight: bold;
+    padding: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: #8E0001;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav a:hover {
+    color: #DA5861;
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.nav-logocompleto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    flex-direction: column;
+}
+
+.carta-contenedor {
+    perspective: 1000px;
+    width: 90vw;
+    max-width: 1207px;
+    min-width: 320px;
+    margin: auto;
+    min-height: 400px;
+    padding-bottom: 70px;
+}
+
+.carta {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    min-height: 750px;
+}
+
+.carta.flipped {
+    transform: rotateY(180deg);
+}
+
+.carta-frente,
+.carta-dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+
+.carta-frente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen-carta-frente {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto-carta-frente {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #FDE1D6;
+}
+
+.texto-carta-frente p {
+    font-weight: 700;
+    font-size: 37px;
+}
+
+.carta-dorso {
+    background-color: transparent;
+    padding: 0;
+    overflow: visible;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+}
+
+.imagen-carta-dorso {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.formulario-carta {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #8E0001;
+    font-family: "Alegreya Sans", sans-serif;
+    background: transparent;
+    padding: 20px 170px 170px 170px;
+}
+
+.formulario-carta label {
+    font-size: 30px;
+    font-weight: 700;
+    color: #8E0001;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.grupo-horizontal {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    border: 2px solid #8E0001;
+    border-radius: 8px;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+    color: #8E0001;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: 3px solid #DA5861;
+}
+
+.boton {
+    margin-top: 10px;
+    width: 225px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 4px solid #8E0001;
+    border-radius: 15px;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #8E0001;
+    background-color: #FDE1D6;
+    transition: transform 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.formulario-carta .boton {
+    align-self: center;
+}
+
+.boton:hover {
+    color: #DA5861;
+    border: 4px dashed #DA5861;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #FDE1D6;
+    width: 100%;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-top: 5px solid #a20000;
+    overflow: visible;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.corazon-footer {
+    width: 16px;
+    height: auto;
+}
+
+.footer-2 {
+    display: flex;
+    background-color: #DA5861;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.footer-2 p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FDE1D6;
+}
+
+.primer-footer {
+    display: flex;
+    max-width: 1920px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    padding-right: 48px;
+    padding-left: 48px;
+    width: 1920px;
+}
+
+.primer-footer-izquierda,
+.primer-footer-derecha {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.primer-footer-centro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.primer-footer-derecha {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 300px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.primer-footer-derecha li {
+    display: inline-block;
+}
+
+.footer-flor {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
+    display: block;
+}
+
+footer li {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: #8E0001;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #8E0001;
+}
+
+.mi-portafolio {
+    width: 225px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="nav-izquierda">
+                <li><a href="index.html">¿QUIEN SOY?</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+            </ul>
+            <div class="nav-logocompleto">
+                <img src="img/corazon-nav.svg" alt="corazon" class="corazon-nav">
+                <img src="img/logo.svg" alt="logo" class="logo-nav">
+                <img src="img/corazon-nav.svg" alt="corazon" class="corazon-nav">
+            </div>
+            <ul class="nav-izquierda">
+                <li><a href="https://drive.google.com/drive/folders/1F9MyTBw8r79ZVaB1XWfoIjKHd291XsH5" target="_blank"
+                        rel="noopener noreferrer"> CURRICULUM</a></li>
+                <li><a href="formulario.html">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="carta-contenedor" id="carta">
+                <div class="carta">
+                    <div class="carta-frente">
+                        <img src="img/carta-frente.svg" alt="carta frente" class="imagen-carta-frente">
+                        <div class="texto-carta-frente">
+                            <p>¿Estás listo para trabajar juntos?</p>
+                        </div>
+                    </div>
+                    <div class="carta-dorso">
+                        <img src="img/carta-dorso.svg" class="imagen-carta-dorso" alt="carta dorso">
+                        <form class="formulario-carta">
+                            <div class="grupo-horizontal">
+                                <div class="campo">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="telefono">Número de teléfono:</label>
+                                    <input type="tel" id="telefono" name="telefono" required>
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje">Consulta:</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="boton">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-1">
+            <div class="primer-footer">
+                <ul class="primer-footer-izquierda">
+                    <li><a href="mailto:ornellaisabelnegro@gmail.com">ornellaisabelnegro@gmail.com</a></li>
+                    <li>Argentina - Buenos Aires - Ingeniero Budge</li>
+                </ul>
+                <div class="primer-footer-centro">
+                    <img src="img/footer-flor.png" alt="flor" class="footer-flor">
+                    <img src="img/mi-portafolio.svg" alt="Mi Portafolio" class="mi-portafolio">
+                    <a href="formulario.html" class="boton">¡TRABAJA CONMIGO!</a>
+                </div>
+                <ul class="primer-footer-derecha">
+                    <li><a href="https://www.facebook.com/ornella.negro.79/"><img src="img/facebook-icono.svg"
+                                alt="Logo de facebook"></a></li>
+                    <li><a href="https://instagram.com/ornella.isa"><img src="img/instagram-icono.svg"
+                                alt="Logo de instagram"></a></li>
+                    <li><a href="https://www.tiktok.com/@ornelita2002?_t=ZM-8x3AZY1Qi7M&_r=1"><img
+                                src="img/tiktok-icono.svg" alt="Logo de tiktok"></a></li>
+                    <li><a href="https://wa.me/qr/L2POLXETWMTCI1"><img src="img/whatsapp-icono.svg"
+                                alt="Logo de whatsapp"></a></li>
+                    <li><a href="https://x.com/bel_ornella"><img src="img/twitter-icono.svg" alt="Logo de twitter"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-2">
+            <p>© 2025 Mi Portfolio. Reservados todos los derechos.</p>
+            <img src="img/corazon-nav.svg" alt="corazon" class="corazon-footer">
+            <p>Ornella Negro - Diseño y Comunicacion Visual</p>
+        </section>
+    </footer>
+</body>
+
+</html>
