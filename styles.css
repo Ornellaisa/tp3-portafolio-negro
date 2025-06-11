@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #FDE1D6;
     display: flex;
@@ -28,19 +21,18 @@ header {
     align-items: center;
     width: 100%;
     height: 154px;
-    padding: 10px 0;
-    gap: 10px;
-    flex-shrink: 0;
+    z-index: 1000;
+    position: fixed;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 317px;
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .nav-izquierda {
@@ -91,6 +83,7 @@ main {
     align-items: center;
     margin-bottom: 120px;
     flex-direction: column;
+    padding-top: 200px;
 }
 
 .carta-contenedor {
@@ -262,7 +255,6 @@ footer {
     min-height: 260px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: end;
     border-top: 5px solid #a20000;
     overflow: visible;
@@ -283,8 +275,8 @@ footer {
     margin-top: 30px;
     justify-content: space-between;
     align-items: center;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 .footer-2 p {
@@ -297,14 +289,13 @@ footer {
 
 .primer-footer {
     display: flex;
-    max-width: 1920px;
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3rem;
-    padding-right: 48px;
-    padding-left: 48px;
-    width: 1920px;
+    max-width: none;
+    box-sizing: border-box;
+    padding-right: 90px;
+    padding-left: 90px;
 }
 
 .primer-footer-izquierda,
@@ -329,8 +320,6 @@ footer {
 .primer-footer-derecha {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    width: 300px;
     justify-content: flex-end;
     align-items: center;
 }
