@@ -12,3 +12,4 @@ formulario.addEventListener('submit', (e) => {
     carta.querySelector('.carta').classList.remove('flipped');
     formulario.reset();
 });
+
