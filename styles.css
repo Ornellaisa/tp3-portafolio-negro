@@ -6,6 +6,46 @@
     box-sizing: border-box;
 }
 
+H1 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FDE1D6;
+}
+
+H2 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 700;
+    color: #DA5861;
+}
+
+.informacion h1 {
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    color: #8E0001;
+}
+
+.informacion li {
+    font-size: 27px;
+    font-style: normal;
+    list-style-type: none;
+}
+
+.barra-bienvenida {
+    background-color: #DA5861;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
 body {
     background-color: #FDE1D6;
     display: flex;
@@ -31,11 +71,11 @@ header {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
 }
 
-.nav-izquierda {
+.nav-izquierda,
+.nav-derecha {
     display: flex;
 }
 
@@ -83,6 +123,9 @@ main {
     align-items: center;
     margin-bottom: 120px;
     flex-direction: column;
+}
+
+.main-formu {
     padding-top: 200px;
 }
 
@@ -208,7 +251,7 @@ textarea {
     border: 2px solid #8E0001;
     border-radius: 8px;
     font-family: "Alegreya Sans", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: #8E0001;
 }
 
@@ -216,7 +259,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    outline: 3px solid #DA5861;
+    outline: 4px solid #DA5861;
 }
 
 .boton {
@@ -232,7 +275,7 @@ textarea:focus {
     border-radius: 15px;
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     color: #8E0001;
     background-color: #FDE1D6;
     transition: transform 0.3s ease, border 0.3s ease, color 0.3s ease;
@@ -275,8 +318,7 @@ footer {
     margin-top: 30px;
     justify-content: space-between;
     align-items: center;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding: 0 90px;
 }
 
 .footer-2 p {
@@ -294,15 +336,14 @@ footer {
     justify-content: space-between;
     max-width: none;
     box-sizing: border-box;
-    padding-right: 90px;
-    padding-left: 90px;
+    padding: 0 90px;
 }
 
 .primer-footer-izquierda,
 .primer-footer-derecha {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -318,7 +359,6 @@ footer {
 }
 
 .primer-footer-derecha {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -354,4 +394,354 @@ footer a {
 
 .mi-portafolio {
     width: 225px;
+}
+
+.fondo-presentacion {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    display: flex;
+}
+
+.destacado {
+    font-weight: 700;
+    font-style: italic;
+    color: #DA5861;
+}
+
+.presentacion-texto p {
+    font-size: 30px;
+    width: 615px;
+    text-align: center;
+    margin-bottom: 84px;
+    padding-top: 54px;
+}
+
+.franja-imagen {
+    width: 617px;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 75px 0 60px;
+}
+
+.informacion article {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fila-tres {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 84px;
+}
+
+.separacion {
+    width: 270px;
+    height: auto;
+}
+
+.corazon-separador {
+    width: 30px;
+    height: auto;
+    margin-top: 84px;
+}
+
+.item {
+    width: 13px;
+    height: auto;
+    margin-right: 17px;
+}
+
+.herramientas li {
+    padding-bottom: 22px;
+}
+
+.informacion h2 {
+    margin-top: 18px;
+}
+
+.qr {
+    width: 270px;
+    height: auto;
+    text-align: center;
+}
+
+.qr h1 {
+    color: #DA5861;
+    font-size: 30px;
+}
+
+.estudios {
+    width: 360px;
+}
+
+.experiencias {
+    width: 240px;
+}
+
+.estudios li,
+.experiencias li {
+    margin-bottom: 6px;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.horizontal {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bloque h1 {
+    color: #8E0001;
+    margin-right: 40px;
+}
+
+.horizontal li {
+    font-size: 27px;
+    font-style: normal;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.resalte {
+    font-weight: 700;
+    font-style: normal;
+    color: #DA5861;
+}
+
+.quien-soy {
+    margin: 84px 0 42px;
+    width: 350px;
+}
+
+.mi-foto {
+    width: 617px;
+}
+
+.foto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corazon-rojo-datos {
+    width: 16px;
+    margin: 0 10px;
+}
+
+.primer-fila {
+    display: flex;
+    align-items: center;
+}
+
+.primer-fila li {
+    list-style: none;
+}
+
+.primeros-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.segundos-datos,
+.primeros-datos {
+    font-size: 27px;
+    color: #8E0001;
+    margin: 250px 40px 0;
+}
+
+.segundos-datos li,
+.primeros-datos li {
+    padding-bottom: 22px;
+}
+
+.corazon-rosa-datos {
+    width: 44px;
+    height: auto;
+}
+
+.trabajos-titulo {
+    width: 550px;
+    margin: 84px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.items {
+    background-color: #da5861b7;
+    box-shadow: 5px 5px 15px #79000060;
+}
+
+.revista,
+.afiches,
+.cronograma,
+.fondo-revista,
+.fondo-afiche,
+.fondo-crono {
+    width: 914px;
+    height: 356px;
+    grid-column: span 2;
+}
+
+.afiches,
+.cronograma {
+    height: 350px;
+}
+
+.raices,
+.miel,
+.galiffi,
+.fondo-raices,
+.fondo-miel,
+.fondo-galiffi {
+    width: 436px;
+    height: 356px;
+    grid-column: span 1;
+}
+
+.miel,
+.galiffi,
+.fondo-miel,
+.fondo-galiffi {
+    height: 350px;
+}
+
+.fondo-revista,
+.fondo-raices,
+.fondo-miel,
+.fondo-afiche,
+.fondo-crono,
+.fondo-galiffi {
+    height: auto;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fde1d6f0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+    text-align: center;
+}
+
+.lightbox:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.lightbox h1 {
+    margin-bottom: 10px;
+    color: #8E0001;
+}
+
+.lightbox h2 {
+    margin-bottom: 30px;
+}
+
+.lightbox p {
+    font-size: 27px;
+    width: 1000px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.lightbox img {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #febaba;
+}
+
+.lightbox .descripcion {
+    margin-top: 70px;
+}
+
+.lightbox a {
+    text-decoration: none;
+}
+
+.abrir-menu,
+.cerrar-menu,
+.logo-mobile {
+    display: none;
+    width: 60px;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .abrir-menu,
+    .logo-mobile {
+        display: block;
+    }
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu ul {
+        position: sticky;
+        top: 0;
+        right: 0;
+        background-color: #DA5861;
+        width: 20rem;
+        padding: 2rem;
+    }
+
+    .menu.abierto .cerrar-menu {
+        display: block;
+    }
+
+
+    .menu {
+        align-items: end;
+        position: absolute;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .logo-mobile {
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: end;
+    }
 }
