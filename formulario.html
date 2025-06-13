@@ -16,25 +16,31 @@
 <body>
     <header>
         <nav class="menu">
+            <div class="logo-mobile">
+                <img src="img/corazon-nav.svg" alt="corazon" class="corazon-nav">
+                <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo-nav"></a>
+                <img src="img/corazon-nav.svg" alt="corazon" class="corazon-nav">
+            </div>
+            <button id="btnabrir" class="abrir-menu"><img src="img/menu-hamburguesa.svg" alt="menu"></button>
+            <button id="btncerrar" class="cerrar-menu"><img src="img/menu-hamburguesa-salir.svg" alt=""></button>
             <ul class="nav-izquierda">
                 <li><a href="index.html">¿QUIEN SOY?</a></li>
                 <li><a href="#proyectos">PROYECTOS</a></li>
             </ul>
             <div class="nav-logocompleto">
                 <img src="img/corazon-nav.svg" alt="corazon" class="corazon-nav">
-                <img src="img/logo.svg" alt="logo" class="logo-nav">
+                <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo-nav"></a>
                 <img src="img/corazon-nav.svg" alt="corazon" class="corazon-nav">
             </div>
-            <ul class="nav-izquierda">
+            <ul class="nav-derecha">
                 <li><a href="https://drive.google.com/drive/folders/1F9MyTBw8r79ZVaB1XWfoIjKHd291XsH5" target="_blank"
                         rel="noopener noreferrer"> CURRICULUM</a></li>
                 <li><a href="formulario.html">CONTACTO</a></li>
             </ul>
-
         </nav>
     </header>
 
-    <main>
+    <main class="main-formu">
         <section>
             <div class="carta-contenedor" id="carta">
                 <div class="carta">
@@ -65,7 +71,7 @@
                                 <label for="mensaje">Consulta:</label>
                                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                             </div>
-                            <button type="submit" class="boton">Enviar</button>
+                            <button type="submit" class="boton">ENVIAR</button>
                         </form>
                     </div>
                 </div>
